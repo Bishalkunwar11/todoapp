@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title Already Exists – Todo App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        *, *::before, *::after { box-sizing: border-box; }
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: linear-gradient(135deg, #e8f5e9 0%, #f0f0f0 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .card {
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.12);
+            padding: 40px 32px;
+            max-width: 420px;
+            width: 100%;
+            text-align: center;
+        }
+        .icon {
+            font-size: 3rem;
+            color: #f44336;
+            margin-bottom: 16px;
+        }
+        h1 {
+            color: #4CAF50;
+            margin: 0 0 8px;
+            font-size: 1.6rem;
+        }
+        h2 {
+            color: #333;
+            margin: 0 0 12px;
+            font-size: 1.15rem;
+        }
+        p {
+            color: #666;
+            margin: 0 0 24px;
+            font-size: 0.95rem;
+        }
+        .btn-back {
+            display: inline-block;
+            padding: 11px 28px;
+            background-color: #4CAF50;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+            font-size: 0.95rem;
+            transition: background-color 0.2s;
+        }
+        .btn-back:hover { background-color: #43A047; }
+        .btn-back i { margin-right: 6px; }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="icon"><i class="fas fa-exclamation-circle"></i></div>
+        <h1>Todo App</h1>
+        <h2>Title Already in Use</h2>
+        <p>A todo with that title already exists.<br>Please choose a different title.</p>
+        <a href="/" class="btn-back"><i class="fas fa-arrow-left"></i> Go Back</a>
+    </div>
+</body>
+</html>
